@@ -1,8 +1,9 @@
 <script type = "text/javascript">
-  var date1 = new Date('11/13/2019');
-  var date2 = new Date('05/11/2020');
+  var now = new Date()
+  var today = new Date((now.getMonth() + 1) +'/' + now.getDate() + '/' + now.getFullYear());
+  var end = new Date('05/11/2020');
   
-  var days_diff = Math.ceil((date2.getTime() - date1.getTime()) / (86400000));
+  var days_diff = Math.ceil((end.getTime() - today.getTime()) / (86400000));
   
-  document.write("There are " + days_diff + " until GCSE's start!");
+  document.write("There are " + days_diff + " days until GCSE's start!");
 </script>
