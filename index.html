@@ -2,5 +2,6 @@
   var now = new Date();
   var today = new Date((now.getMonth() + 1) +'/' + now.getDate() + '/' + now.getFullYear());
   var end = new Date('05/11/2020');
-  document.write('There are " + (Math.ceil((end.getTime() - today.getTime()) / (86400000))) + " days until GCSE's start on Monday 11 May 2020!');
+  var days = Math.ceil((end.getTime() - today.getTime()) / (86400000));
+  document.write('There are " + days + " days until GCSE's start on Monday 11 May 2020!');
 </script>
